@@ -26,15 +26,14 @@ This table compares different types of vulnerabilities, detailing the specific v
 |  Numb  |   **OWASP TOP 10 2003 e 2004**    |    **File Source**      |    **Executable**      |            **Details**                                 |
 |-------:|:---------------------------------:|:-----------------------:|:----------------------:|:------------------------------------------------------:|
 |   01   |   A05: Buffer Overflow Vanilla    |   bufferOverflow.cpp    |  bufferOverflow.exe    |    Buffer Overflow and Privilege Escalation            |
-|   02   |        A05: Heap Overflow         |   heapOverflow.cpp      |  heapOverflow.exe      |    Heap Overflow and Privilege Escalation              |
-|   03   |      A05: Integer Overflow        |   integerOverflow.cpp   |  integerOverflow.exe   |    Cause an Integer Overflow and Escalate Privileges   |
-|   04   |      A05: Integer Underflow       |   integerUnderflow.cpp  |  integerUnderflow.exe  |    Cause an Integer Underflow and Escalate Privileges  |
+|   02   |     A06: Injection Flaws          |   commandInjection.cpp  |  commandInjection.exe  |    Use a pipe and execute OS commands.                 |
+|   03   |      A05: Format String           |   formatString.cpp      |  formatString.exe      |    Provide a malicious string and escalate privilege.  |
+|   04   |     A05: Memory Leaks             |   memoryLeaks.cpp       |  memoryLeaks.exe       |    Overflow a buffer causing Denial of Service.        |
 |   05   |  A05: Improper Null Termination   |   improperNulTerm.cpp   |  improperNulTerm.exe   |    Exploit Improper Null Termination, Write to Memory, and Escalate Privileges  |
-|   06   |      A05: Format String           |   formatString.cpp      |  formatString.exe      |    Provide a malicious string and escalate privilege.  |
-|   07   |     A05: Use-After-Free           |   useAfterFree.cpp      |  useAfterFree.exe      |    Lead the buffer to undefined behavior.              |
-|   08   |     A05: Memory Leaks             |   memoryLeaks.cpp       |  memoryLeaks.exe       |    Overflow a buffer causing Denial of Service.        |
-|   09   |     A05: Race Condition           |   raceCondition.cpp     |  raceCondition.exe     |    Overwrite variables improperly.                     |
-|   10   |     A06: Injection Flaws          |   commandInjection.cpp  |  commandInjection.exe  |    Use a pipe and execute OS commands.                 |
+|   06   |        A05: Heap Overflow         |   heapOverflow.cpp      |  heapOverflow.exe      |    Heap Overflow and Privilege Escalation              |
+|   07   |      A05: Integer Overflow        |   integerOverflow.cpp   |  integerOverflow.exe   |    Cause an Integer Overflow and Escalate Privileges   |
+|   04   |      A05: Integer Underflow       |   integerUnderflow.cpp  |  integerUnderflow.exe  |    Cause an Integer Underflow and Escalate Privileges  |
+
 
 ## How to exploit vulnerability number 01 from the table (Buffer Overflow Vanilla)
 
@@ -83,6 +82,26 @@ msf-pattern_offset -q 62413961
 Look the Buffer Overflow: EIP have 4 characters "B".
 
 To successfully execute a calculator or perform another action on Windows, we recommend studying how the EIP manipulation process works for Vanilla Buffer Overflow.
+
+
+## How to exploit vulnerability number 02 from the table (Command Injection)
+
+![yprey](https://i.imgur.com/gaP7BEO.png)
+
+01 - Enter the directory or folder name followed by the pipe character and a system-level operating system command, for example, "ipconfig".
+
+## How to exploit vulnerability number 03 from the table (Format String)
+
+![yprey](https://i.imgur.com/txVOze3.png)
+
+01 - Enter more than 20 characters to gain visibility into the memory issue related to Format String..
+
+
+## How to exploit vulnerability number 04 from the table (Memory Leak)
+
+![yprey](https://i.imgur.com/K6tpSkt.png)
+
+01 - Access to the program to check memory leakage and consumption.
 
 
 ## How use
