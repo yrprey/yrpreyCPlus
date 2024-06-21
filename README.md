@@ -1,10 +1,10 @@
-# YpreyC++
+# YrpreyC++
 
 ![yprey](https://i.imgur.com/zHoDJG9_d.webp?maxwidth=760&fidelity=grand)
 
 **Programs created by [Fernando Mengali](https://www.linkedin.com/in/fernando-mengali-273504142/)**
 
-YpreyC++ is a framework written in the C++ language that contains vulnerabilities related to memory issues, categorized as overflows. The framework was developed for individuals interested in teaching and learning more about Pentesting (penetration testing) and Application Security. 
+YrpreyC++ is a framework written in the C++ language that contains vulnerabilities related to memory issues, categorized as overflows. The framework was developed for individuals interested in teaching and learning more about Pentesting (penetration testing) and Application Security. 
 
 In the context of Offensive Security, vulnerabilities present in web applications can be identified, exploited, and compromised. For professionals and experts in application security, the framework provides an in-depth understanding of vulnerabilities at the code level.
 
