@@ -15,6 +15,8 @@ Currently, Yrprey is one of the frameworks in C++ with the highest number of mem
 
  - A5: Overflow Vulnerability Categories
 
+ - A6: Injection Flaws
+
 #### List of Vulnerabilities
 
 In this section, we have a comparison of vulnerabilities categorized by overflow with compiled code files and vulnerable software. This table makes it easier to understand how to exploit vulnerabilities in each system function. 
@@ -32,7 +34,7 @@ This table compares different types of vulnerabilities, detailing the specific v
 |   05   |  A05: Improper Null Termination   |   improperNulTerm.cpp   |  improperNulTerm.exe   |    Exploit Improper Null Termination, Write to Memory, and Escalate Privileges  |
 |   06   |        A05: Heap Overflow         |   heapOverflow.cpp      |  heapOverflow.exe      |    Heap Overflow and Privilege Escalation              |
 |   07   |      A05: Integer Overflow        |   integerOverflow.cpp   |  integerOverflow.exe   |    Cause an Integer Overflow and Escalate Privileges   |
-|   04   |      A05: Integer Underflow       |   integerUnderflow.cpp  |  integerUnderflow.exe  |    Cause an Integer Underflow and Escalate Privileges  |
+|   08   |      A05: Integer Underflow       |   integerUnderflow.cpp  |  integerUnderflow.exe  |    Cause an Integer Underflow and Escalate Privileges  |
 
 
 ## How to exploit vulnerability number 01 from the table (Buffer Overflow Vanilla)
